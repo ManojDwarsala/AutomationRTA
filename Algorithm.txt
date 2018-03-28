@@ -1,0 +1,6 @@
+Logic used in TestSummary.py:
+1. A dynamic dictionary is created for different types of test cases performed.
+2. A pass and fail count is maintained for each test case.
+3. While parsing the log file, if the test-case in found in dictionary and if its status is passed than it increments the pass count . If failed, it increments the fail count.
+4. Once parsing is done, it creates a new file and writes each test case, along with their pass and fail count including the overall pass and fail count.
+5. Then a XML file is created based on the pass, fail counts of each test case to present them visually in Jenkins and also provided  the option of seeing the description for failed test cases directly over the visual representation, without reopening the log file.
